@@ -14,5 +14,5 @@ printf('
 wp_head();
 printf('</head>
 	</body>');
-printf('<h1>Soye el Header</h1>');
+printf('<h1>Soy el Header</h1>');
 

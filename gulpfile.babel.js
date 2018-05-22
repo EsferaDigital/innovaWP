@@ -38,7 +38,7 @@ gulp.task('sass', function(){
 });
 
 gulp.task('lint', function () {
-	return gulp.src('./js/custom/**/*.js')
+	return gulp.src('./js/dev/**.js')
 		.pipe(jshint())
 });
 
@@ -68,7 +68,7 @@ gulp.task('imagemin', function () {
 gulp.task('watch', function () {
 	livereload.listen();
 	gulp.watch('./sass/**/*.scss', ['sass'])
-	gulp.watch('./js/custom/**.js', ['javascript'])
+	gulp.watch('./js/js/**.js', ['javascript'])
 	gulp.watch('./img/raw/**/*.*', ['imagemin'])
 
 });

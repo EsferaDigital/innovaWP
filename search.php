@@ -1,5 +1,9 @@
 <?php
 get_header();
-printf('<h1>Soy el search</h1>');
+$search_template = '
+	<p>Los resultados para la busqueda <span>%s</span> son:</p>
+';
+printf($search_template, get_search_query() );
 get_template_part('/plantillas/content');
+get_sidebar();
 get_footer();
