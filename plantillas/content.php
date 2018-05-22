@@ -14,18 +14,20 @@ printf('<main>');
 			$html = '
 				<article>
 					<h1>%s</h1>
+					%s
 					<a href="%s">%s</a>
 					<p>%s - %s</p>
 					<p>%s</p>
 					<p>%s</p>
 					<p>%s</p>
-					<p>%s</p>
+					<a href="%s"><p>%s</p></a>
 					<div>%s</div>
 				</article>
 			';
 			printf(
 				$html,
 				get_the_title(),
+				get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'imagen-destacada' ) ),
 				get_the_permalink(),
 				get_the_permalink(),
 				get_the_date(),
@@ -33,6 +35,7 @@ printf('<main>');
 				get_the_excerpt(),
 				get_the_category_list( ' - ' ),
 				get_the_tag_list('<p>Tags: ',', ','</p>'),
+				get_author_posts_url(get_the_author_id()),
 				get_the_author(),
 				get_the_content()
 			);
