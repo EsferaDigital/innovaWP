@@ -36,5 +36,24 @@ function read_more(){
 // Añadimos un filtro. Como parametros recibe, 1° un hook (buscar lista de hooks para filtros ), 2° el nombre de la función que ejecutará(función que nosotros debemos crear)
 add_filter('excerpt_more', 'read_more');
 
+//Función para activar widgets
+function activa_widgets(){
+	//Por cada register_sidebar() que ponga acá, me dará una barra lateral en la sección widgets de mi interfáz gráfica
+	$datos = array(
+		'name' => __( 'Barra Lateral 1'),
+		'id' => 'sidebar',
+		'class' => 'widgets',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2>',
+		'after_title'   => '</h2>',
+	);
+	register_sidebar($datos);
+}
+
+//Añadimos un nuevo hooks para activar los widgets
+
+add_action('widgets_init', 'activa_widgets');
+
 
 
