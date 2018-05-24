@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: "innova";
-  src:url("/fonts/innova.eot");
-  src:url("/fonts/innova.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/innova.woff") format("woff"),
-    url("/fonts/innova.ttf") format("truetype"),
-    url("/fonts/innova.svg#innova") format("svg");
+  src:url("fonts/innova.eot");
+  src:url("fonts/innova.eot?#iefix") format("embedded-opentype"),
+    url("fonts/innova.woff") format("woff"),
+    url("fonts/innova.ttf") format("truetype"),
+    url("fonts/innova.svg#innova") format("svg");
   font-weight: normal;
   font-style: normal;
 

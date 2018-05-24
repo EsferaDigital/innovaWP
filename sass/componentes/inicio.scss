@@ -1,0 +1,362 @@
+.c-slider{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	box-shadow: $shadow-flat;
+}
+
+.slider{
+	display: flex;
+	width: 300%;
+	&-section{
+		width: 100%;
+		position: relative;
+	}
+	&-text{
+		position: absolute;
+		font-family: $primary-font;
+		font-size: $big-title;
+		font-weight: $bold;
+		text-transform: uppercase;
+		transform: translate(0, -100%);
+		z-index: 1;
+		color: white;
+	}
+}
+
+.botones{
+	display: flex;
+	width: 80%;
+	position: absolute;
+	justify-content: space-between;
+	z-index: 1;
+	transform: translate(0, 100%);
+	//border: 1px solid red;
+	@include mq($medium){
+		width: 40%;
+	}
+	@include mq($large){
+		width: 30%;
+	}
+}
+
+.slider > section{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-size: cover;
+	background-position: center;
+	&::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: color(primary);
+		opacity: .7;
+	}
+}
+
+.slider-img-1{	background-image: img('1.jpg');}
+.slider-img-2{background-image: img('2.jpg');}
+.slider-img-3{	background-image: img('3.jpg');}
+
+.btn-prev, .btn-next{
+	display: none;
+	//width: rem(40px);
+	//height: rem(40px);
+	padding: $gutter-item;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	//line-height: rem(40px);
+	font-size: 22px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-family: monospace;
+	border-radius: 50%;
+	cursor: pointer;
+	&:hover{
+		background-color: rgba(255, 255, 255, 1);
+		color: color(cta);
+	}
+	@include mq($medium){
+		display: block;
+	}
+}
+
+
+.btn-prev{
+	left: 10px;
+}
+
+.btn-next{
+	right: 10px;
+}
+
+.c-programa{
+	@include c-wrap;
+	height: auto;
+	//padding: $gutter;
+	margin: .5rem auto 0 0;
+	@include mq($large){
+		padding: $gutter;
+		margin: 0;
+	}
+	&-item{
+		@include i-wrap;
+		width: 100%;
+		padding: 0 $gutter;
+		margin: 0;
+		background-color: color(bg-item);
+		box-shadow: $shadow-flat;
+		//border: 1px solid red;
+		@include mq($medium){
+			width: 45%;
+		}
+	}
+	&-item:first-child{
+		margin-right: 0;
+		@include mq($medium){
+			margin-right: $gutter-item;
+		}
+	}
+	&-item:last-child{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&-title{
+		margin: $gutter;
+		margin-left: 0;
+		text-align: center;
+		font-family: $primary-font;
+		font-size: $title;
+		letter-spacing: 2px;
+		@include mq($medium){
+			text-align: left;
+		}
+	}
+	&-text{
+		color: color(text-dark);
+		//font-family: $secondary-font;
+		letter-spacing: 2px;
+		// text-indent: 2rem;
+		margin-bottom: $gutter-item;
+	}
+	&-button{
+		margin: $gutter;
+		margin-right: 0;
+		float: right;
+		cursor: pointer;
+	}
+	&-img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: auto;
+		padding: $gutter;
+		& img{
+			display: block;
+			height: auto;
+		}	
+	}
+}
+
+.c-desafio{
+	position: relative;
+	width: 100%;
+	//desde 320px de vw;
+	height: 67.5rem;
+	margin: $gutter-item auto $gutter 0;
+	background-color: color(bg);
+	@include mq($movil1){
+		height: 64.5rem;
+	}
+	@include mq($movil2){
+		height: 64rem;
+	}
+	@include mq($small){
+		height: 62.5rem;
+	}
+	@include mq($medium){
+		height: 35rem;
+	}
+	@include mq($large){
+		height: 20rem;
+	}
+	&-banner{
+		width: 100%;
+		position: relative;
+		top: 0;
+		height: 15rem;
+		background-size: cover;
+		background-position: center;
+		//background-image: url('../img/banner-desafio.jpg');
+		background-image: img('banner-desafio.jpg');
+		&::before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: color(primary);
+			opacity: .8;
+		}
+		&-title{
+			position: relative;
+			text-align: center;
+			width: 100%;
+			z-index: 1;
+			color: color(bg-item);
+			padding: $gutter;
+			font-family: $primary-font;
+			font-size: $big-title;
+		}
+	}
+}
+
+.content-desafio{
+	@include c-wrap;
+	position: absolute;
+   top: 7%;
+	background-color: transparent;
+	justify-content: space-around;
+	padding: $gutter;
+	//border: 1px solid red;
+	@include mq($medium){
+		top: 13%;
+	}
+	@include mq($large){
+		top: 20%;
+	}
+	&-item{
+		@include i-wrap;
+		width: 97%;
+		padding: $gutter;
+		margin-bottom: $gutter-item;
+		font-family: $secondary-font;
+		box-shadow: $shadow-flat;
+		background-color: color(bg-item);
+		@include mq($medium){
+			width: 42%;
+			margin-right: $gutter-item;
+		}
+		@include mq($large){
+			width: 22%;
+		}
+		& p{
+			text-align: center;
+			padding: $gutter;
+		}
+	}
+	&-item:nth-child(even){
+		margin-right: 0;
+		@include mq($large){
+			margin-right: $gutter-item;
+		}
+	}
+	&-item:last-child{
+		margin-right: 0;
+		@include mq($large){
+			margin-right: 0;
+		}
+	}
+	&-item:hover{
+		background-color: color(secondary);
+		color: white;
+		cursor: pointer;
+	}
+	&-icon{
+		margin: auto;
+		text-align: center;
+		font-size: $icon;
+		color: color(cta);
+		padding: $gutter;
+	}
+	&-title{
+		text-align: center;
+		font-family: $primary-font;
+		font-size: $sub-title;
+		font-weight: $bold;
+	}
+}
+
+.c-empresas{
+	@include c-wrap;
+	width: 100%;
+	padding: $gutter;
+	margin: $gutter-item auto 0 0;
+	background-color: color(secondary);
+	&-title{
+		text-align: center;
+		width: 100%;
+		color: white;
+		padding: $gutter-item;
+		font-family: $primary-font;
+		font-size: $title;
+	}
+	&-item{
+		@include i-wrap;
+		max-width: 97%;
+		margin: auto;
+		padding: $gutter;
+		margin-bottom: $gutter-item;
+		font-family: $secondary-font;
+		box-shadow: $shadow-flat;
+		background-color: color(bg-item);
+		//border: 1px solid green;
+		@include mq($medium){
+			width: 48%;
+			margin-right: $gutter-item;
+		}
+		@include mq($large){
+			width: 22%;
+		}
+	}
+	&-icon{
+		margin: auto;
+		text-align: center;
+		font-size: $icon;
+		color: color(cta);
+		padding: 0 $gutter-item;
+	}
+	&-subtitle{
+		text-align: center;
+		width: 100%;
+		color: black;
+		padding: $gutter-item;
+		font-family: $primary-font;
+		font-size: $sub-title;
+	}
+	& p{
+		text-align: center;
+	}
+}
+
+.c-patrocinadores{
+	@include c-wrap;
+	width: 100%;
+	background-color: color(cta);
+	&-item{
+		@include i-wrap;
+		padding-top: .7rem;
+		width: 25%;
+		text-align: center;
+		font-size: $icon;
+		height: 1.5;
+		line-height: 1.5;
+		color: white;
+	}
+}

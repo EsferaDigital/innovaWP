@@ -29,7 +29,7 @@ gulp.task('sass', function(){
 		.pipe(gulpsass())
 		.pipe(autoprefixer('last 2 versions'))
 		.pipe(gulp.dest('.'))
-		.pipe(cleanCss({keepSpecialComments: 1}))
+		//.pipe(cleanCss({keepSpecialComments: 0}))
 		// Escribir los sourcemaps
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('.'))

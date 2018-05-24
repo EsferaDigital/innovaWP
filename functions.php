@@ -55,5 +55,14 @@ function activa_widgets(){
 
 add_action('widgets_init', 'activa_widgets');
 
+// JS Personalizado
+
+function insertar_js(){
+	$scriptSrc = get_template_directory_uri() . '/js/index.js';
+	wp_enqueue_script( 'personal', $scriptSrc , array(), '1.0',  true );
+}
+
+add_action( 'wp_enqueue_scripts', 'insertar_js' );
+
 
 
