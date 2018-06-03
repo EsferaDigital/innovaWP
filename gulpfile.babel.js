@@ -47,7 +47,7 @@ gulp.task('javascript', ['lint'], function() {
 		.pipe(babel())
 		.pipe(plumber({ errorHandler: onError }))
 		.pipe(concat('index.js'))
-		.pipe(uglify())
+		//.pipe(uglify())
 		.pipe(gulp.dest('./js'))
 		.pipe(livereload())
 		.pipe(notify({ message: 'JavaScript task finalizada' }))

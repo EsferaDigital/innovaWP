@@ -14,12 +14,12 @@ printf('<main class="c-content">');
 			$html = '
 				<article class="c-content-item">
 					<a href="%s">%s</a>					
-					<h1 class="item-title">%s</h1>	
-					<div class="item-autor">Por: <a href="%s">%s</a></div>
+					<h1>%s</h1>	
+					<div>Por: <a href="%s">%s</a></div>				
 					<p>%s - %s</p>
-					<div class="item-extracto">%s</div>
-					<p class="item-categorias">%s</p>
+					<p>%s</p>
 					<p>%s</p>					
+					<div>%s</div>
 				</article>
 			';
 			printf(
@@ -31,9 +31,9 @@ printf('<main class="c-content">');
 				get_the_author(),				
 				get_the_date(),
 				get_the_time(),
-				get_the_excerpt(),
 				get_the_category_list( ' - ' ),
-				get_the_tag_list('<p>Tags: ',', ','</p>')
+				get_the_tag_list('<p>Tags: ',', ','</p>'),		
+				get_the_content()
 			);
 		endwhile;
 	else:

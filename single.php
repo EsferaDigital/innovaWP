@@ -1,7 +1,11 @@
+<style>.c-header{
+	position:static !important;
+	background-color: #0075a2;
+}
+</style>
 <?php
 get_header();
-printf('<h1>Soy el single</h1>');
-get_template_part('/plantillas/content');
+get_template_part('/plantillas/content-post');
 get_sidebar();
 comments_template();
 get_footer();

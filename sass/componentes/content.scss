@@ -1,0 +1,63 @@
+.c-principal{
+	// border: 4px solid blue;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.c-content{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	// border: 3px solid red;
+	@include mq($medium){
+		width: 68%;
+		margin-left: $gutter;
+		margin-bottom: $gutter;
+	}
+	&-item{
+		width: 100%;
+		background-color: color(bg-item);
+		box-shadow: $shadow-flat;
+		margin: .5rem auto 0 0;
+		// border: 2px solid yellow;
+		padding: $gutter;
+		font-family: $secondary-font;
+		@include mq($medium){
+			width: 48%;
+			flex: auto;
+			margin: .5rem .5rem 0 0;
+		}
+		&:last-child{
+			margin-bottom: .5rem;
+		}
+	}
+}
+
+.item-title{
+	font-family: $primary-font;
+	font-size: $sub-title;
+	font-weight: $light;
+	padding: $gutter-item 0 0 0;	
+}
+
+.item-autor{
+	font-family: $secondary-font;
+	padding: $gutter-item 0;
+}
+
+.item-extracto{
+	font-family: $secondary-font;
+	padding: $gutter-item 0;
+}
+
+.item-categorias{
+	padding-bottom: $gutter-item;
+}
+
+.c-aside{
+	width: 100%;
+	border: 3px solid green;
+	@include mq($medium){
+		width: 28%;
+	}
+}

@@ -283,7 +283,6 @@ textarea {
   .c-header-menu {
     position: relative;
     font-size: 2rem;
-    top: .5rem;
     padding: 0 1rem;
     z-index: 600;
     color: #ff9f1c;
@@ -634,7 +633,7 @@ textarea {
   .content-desafio-title {
     text-align: center;
     font-family: "Merriweather", serif;
-    font-size: 1.4875em;
+    font-size: 1.3125em;
     font-weight: 600; }
 
 .c-empresas {
@@ -689,7 +688,7 @@ textarea {
     color: black;
     padding: 0.5rem;
     font-family: "Merriweather", serif;
-    font-size: 1.4875em; }
+    font-size: 1.3125em; }
   .c-empresas p {
     text-align: center; }
 
@@ -757,7 +756,7 @@ textarea {
   .c-footer-title {
     padding: 0.5rem;
     font-family: "Merriweather", serif;
-    font-size: 1.4875em; }
+    font-size: 1.3125em; }
 
 .copyright {
   display: block;
@@ -782,6 +781,67 @@ textarea {
   right: 5%;
   font-size: 2.5rem;
   cursor: pointer; }
+
+.c-principal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.c-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  @media screen and (min-width: 768px) {
+    .c-content {
+      width: 68%;
+      margin-left: 1rem;
+      margin-bottom: 1rem; } }
+  .c-content-item {
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.575);
+            box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.575);
+    margin: .5rem auto 0 0;
+    padding: 1rem;
+    font-family: "Montserrat", sans-serif; }
+    @media screen and (min-width: 768px) {
+      .c-content-item {
+        width: 48%;
+        -webkit-box-flex: 1;
+            -ms-flex: auto;
+                flex: auto;
+        margin: .5rem .5rem 0 0; } }
+    .c-content-item:last-child {
+      margin-bottom: .5rem; }
+
+.item-title {
+  font-family: "Merriweather", serif;
+  font-size: 1.3125em;
+  font-weight: 300;
+  padding: 0.5rem 0 0 0; }
+
+.item-autor {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 0; }
+
+.item-extracto {
+  font-family: "Montserrat", sans-serif;
+  padding: 0.5rem 0; }
+
+.item-categorias {
+  padding-bottom: 0.5rem; }
+
+.c-aside {
+  width: 100%;
+  border: 3px solid green; }
+  @media screen and (min-width: 768px) {
+    .c-aside {
+      width: 28%; } }
 
 .c-modal {
   position: fixed;
