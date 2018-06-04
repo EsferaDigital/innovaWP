@@ -1,6 +1,14 @@
-<style>.c-header{
+<style>
+
+.c-header{
 	position:static !important;
 	background-color: #0075a2;
+}
+
+.c-header-menu{
+	@media screen and (min-width: 768px){
+		top: .5rem !important;
+	}
 }
 </style>
 <?php

@@ -18,7 +18,7 @@ printf('<main class="c-content">');
 					<div class="item-autor">Por: <a href="%s">%s</a></div>
 					<p>%s - %s</p>
 					<div class="item-extracto">%s</div>
-					<p class="item-categorias">%s</p>
+					<div class="item-categorias">%s</div>
 					<p>%s</p>					
 				</article>
 			';
@@ -33,7 +33,7 @@ printf('<main class="c-content">');
 				get_the_time(),
 				get_the_excerpt(),
 				get_the_category_list( ' - ' ),
-				get_the_tag_list('<p>Tags: ',', ','</p>')
+				get_the_tag_list('<p class="tag icon-tag"> ',' ','</p>')
 			);
 		endwhile;
 	else:

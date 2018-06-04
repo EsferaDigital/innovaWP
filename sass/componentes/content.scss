@@ -2,6 +2,7 @@
 	// border: 4px solid blue;
 	display: flex;
 	flex-wrap: wrap;
+	background-color: color(bg);
 }
 
 .c-content{
@@ -10,7 +11,7 @@
 	flex-wrap: wrap;
 	// border: 3px solid red;
 	@include mq($medium){
-		width: 68%;
+		width: 65%;
 		margin-left: $gutter;
 		margin-bottom: $gutter;
 	}
@@ -29,6 +30,12 @@
 		}
 		&:last-child{
 			margin-bottom: .5rem;
+			@include mq($medium){
+				margin-bottom: 0;
+			}
+		}
+		&:nth-child(even){
+			margin-right: 0;
 		}
 	}
 }
@@ -43,21 +50,46 @@
 .item-autor{
 	font-family: $secondary-font;
 	padding: $gutter-item 0;
+	& a{
+		color: color(cta);
+		&:hover{
+			color: color(secondary);
+		}
+	}
 }
 
 .item-extracto{
 	font-family: $secondary-font;
 	padding: $gutter-item 0;
+	& a span{
+		font-size: .9rem;
+		color: color(cta);
+		&:hover{
+			color: color(secondary);
+		}
+	}
 }
 
 .item-categorias{
 	padding-bottom: $gutter-item;
+	& a{
+		color: color(cta);
+		&:hover{
+			color: color(secondary);
+		}
+	}
 }
 
-.c-aside{
-	width: 100%;
-	border: 3px solid green;
-	@include mq($medium){
-		width: 28%;
+.icon-tag{
+	color: color(secondary);
+	&::before{
+		position: relative;
+		top: 4px;		
+	}
+	& a{
+		color: color(cta);
+		&:hover{
+			color: color(secondary);
+		}
 	}
 }

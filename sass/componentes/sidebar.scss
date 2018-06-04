@@ -1,0 +1,148 @@
+.c-aside{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	flex: auto;
+	width: 100%;
+	font-family: $secondary-font;
+	// border: 3px solid green;
+	@include mq($medium){
+		width: 28%;
+		margin-right: $gutter;
+	}
+}
+
+.c-aside > div{
+	max-width: 100%;
+	margin: $gutter-item;
+	margin-top: 0;
+	padding: $gutter-item;
+	background-color: color(bg-item);
+	box-shadow: $shadow-flat;
+	&:first-child{
+		background-color: color(bg);
+		box-shadow: none;
+		padding-right: 0;
+		padding-left: 0;
+		// border: 1px solid green;
+	}
+	&:nth-child(2) ul li{
+		padding: $gutter-item 0;
+		border-bottom: 1px solid color(cta);
+	}
+	&:nth-child(2) ul li a{
+		color: black;
+		font-family: $secondary-font;
+		&:hover{
+			color: color(primary);
+		}
+	}
+	& h2{
+		font-family: $primary-font;
+		font-size: $sub-title;
+		font-weight: $light;
+	}
+}
+
+.searchform{
+	display: block;
+	width: 100%;
+	// border: 1px solid red;
+	& div{
+		max-width: 100%;
+		display: flex;
+		border-radius: 5px;
+		margin-top: $gutter-item;
+		// border: 2px solid blue;
+		box-shadow: $shadow-flat;
+	}
+}
+
+#s{
+	width: 70%;
+	flex: auto;
+	padding: .5rem;
+	border: transparent;
+	border-radius: 5px 0 0 5px;
+	background-color: color(bg-item);
+	// border: 1px solid yellow;
+}
+
+#searchsubmit{
+	background-color: color(cta);
+	border: transparent;
+	border-radius: 0 5px 5px 0;
+	color: black;
+}
+
+.screen-reader-text{
+	display: none;
+}
+
+.tagcloud a{
+	color: color(cta);
+	font-size: .9rem !important;
+	&:hover{
+		color: color(primary);
+	}
+}
+
+.rpwwt-widget ul{
+	display: flex;
+	flex-wrap: wrap;
+	& li{
+		width: 45%;	
+		flex: auto;
+		height: 20% !important;
+		margin: .5rem 0 !important;
+		margin-right: 1rem !important;
+		padding: 0 !important;
+		@include mq($medium){
+			height: 10% !important;
+		}
+		&:nth-child(even){
+			margin-right: 0 !important;
+		}
+		& a img{
+			width: 100% !important;
+			margin: 0 !important;
+			height: 100% !important;
+		}
+	}
+}
+
+.lsi-social-icons{
+	display: flex;
+	& li a{
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		justify-items: center;
+		width: auto !important;
+		padding: 0 !important;
+		background-color: transparent !important;
+		&:hover{
+			background-color: transparent !important;
+		}
+	}
+}
+
+.lsicon{
+	display: block;
+	position: relative;
+	top: .5rem;
+	background-color: color(facebook);
+	font-size: 1.5rem;
+	padding: .5rem;
+	border-radius: .5rem;
+	&:hover{
+		opacity: .8;
+	}
+}
+
+.lsicon-twitter{background-color: color(twitter)}
+.lsicon-instagram{
+	background: linear-gradient(to right top,#FFD729, #BB00B5);
+}
+
