@@ -14,26 +14,26 @@ printf('<main class="c-content">');
 			$html = '
 				<article class="c-content-item">
 					<a href="%s">%s</a>					
-					<h1>%s</h1>	
-					<div>Por: <a href="%s">%s</a></div>				
-					<p>%s - %s</p>
+					<h1 class="item-title">%s</h1>	
+					<div class="item-autor">Por: <a href="%s">%s</a></div>				
 					<p>%s</p>
-					<p>%s</p>					
-					<div>%s</div>
+					<div class="item-texto">%s</div>
+					<div class="item-category">%s</div>
+					<p class="item-tags">%s</p>
 				</article>
 			';
 			printf(
 				$html,
 				get_the_permalink(),
-				get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'imagen-destacada' ) ),
+				get_the_post_thumbnail( $post_id, 'full', array( 'class' => 'imagen-destacada' ) ),
 				get_the_title(),
 				get_author_posts_url(get_the_author_id()),
 				get_the_author(),				
 				get_the_date(),
-				get_the_time(),
+				// get_the_time(),
+				get_the_content(),
 				get_the_category_list( ' - ' ),
-				get_the_tag_list('<p>Tags: ',', ','</p>'),		
-				get_the_content()
+				get_the_tag_list('<p class="tag icon-tag"> ',' ','</p>')
 			);
 		endwhile;
 	else:

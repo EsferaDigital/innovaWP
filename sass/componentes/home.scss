@@ -1,0 +1,10 @@
+.container-central{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: color(bg);
+	// border: 3px solid violet;
+	@include mq($large){
+		width: 90%;
+		margin: auto;
+	}
+}

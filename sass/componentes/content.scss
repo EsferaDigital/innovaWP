@@ -1,7 +1,5 @@
 .c-principal{
 	// border: 4px solid blue;
-	display: flex;
-	flex-wrap: wrap;
 	background-color: color(bg);
 }
 
@@ -12,7 +10,7 @@
 	// border: 3px solid red;
 	@include mq($medium){
 		width: 65%;
-		margin-left: $gutter;
+		// margin-left: $gutter;
 		margin-bottom: $gutter;
 	}
 	&-item{

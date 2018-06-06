@@ -1,0 +1,18 @@
+.item-category{
+	padding-top: $gutter-item;
+	& a{
+		color: color(cta);
+		&:hover{
+			color: color(secondary);
+		}
+	}
+}
+
+.item-tags{
+	padding-bottom: $gutter-item;
+}
+
+.item-texto{
+	padding: $gutter-item 0;
+	font-family: $secondary-font;
+}
