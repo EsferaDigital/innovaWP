@@ -1,25 +1,32 @@
+<style>
+.c-header{
+	position:static !important;
+	background-color: #0075a2;
+}
+</style>
 <?php
-/*
-https://codex.wordpress.org/Function_Reference/the_author
- */
 get_header();
-$author_template = '
-	<article>
-		<p>Autor: %s</p>
-		<p>Correo: %s</p>
-		<p>Descripcion: %s</p>
-		<p>Otro: %s</p>
-		%s		
-	</article>
-';
-printf(
-	$author_template,
-	get_the_author(),
-	get_the_author_meta('user_email'),
-	get_the_author_meta('description'),
-	get_the_author_meta('user_level'),
-	get_avatar(get_the_author_meta('ID'))
-);
-get_template_part('/plantillas/content');
-get_sidebar();
+printf('<section class="container-central">');
+	$author_template = '
+		<article class="c-autor">
+			<div class="c-autor-item">%s</div>
+			<div class="c-autor-item">
+				<p class="c-autor-name">Autor: %s</p>
+				<p class="c-autor-mail">Correo: %s</p>
+				<p class="c-autor-description">Descripcion: %s</p>
+			</div>		
+		</article>
+	';
+
+	printf(
+		$author_template,
+		get_avatar(get_the_author_meta('ID')),
+		get_the_author(),
+		get_the_author_meta('user_email'),
+		get_the_author_meta('description')
+		
+	);
+	get_template_part('/plantillas/content');
+	get_sidebar();
+printf('</section>');
 get_footer();

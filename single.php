@@ -3,7 +3,6 @@
 	position:static !important;
 	background-color: #0075a2;
 }
-
 </style>
 <?php
 get_header();

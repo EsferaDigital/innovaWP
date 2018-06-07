@@ -1,0 +1,50 @@
+.c-autor{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: color(secondary);
+	box-shadow: $shadow-flat;
+	&-item{
+		padding: $gutter;
+		padding-top: 0;
+		flex: 1 1 100%;
+		font-family: $secondary-font;
+		// border: 1px solid yellow;
+		@include mq($medium){
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex: 1 1 80%;
+			padding-top: $gutter;
+		}
+		&:first-child{
+			flex: 1 1 100%;
+			padding-top: 1rem;
+			// border: 1px solid red;
+			@include mq($medium){
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: flex-start;
+				flex: 1 1 20%;
+			}
+		}
+		& img{
+			width: 50%;
+			// border: 2px solid red;
+			@include mq($medium){
+				width: 100%;
+			}
+		}
+		& p{
+			display: block;
+			width: 100%;
+			padding: $gutter-item 0;
+			padding-top: 0;
+			color: color(footer);
+			font-size: .9rem;
+			@include mq($medium){
+				font-size: 1rem;
+			}
+		}
+	}
+}

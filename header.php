@@ -9,7 +9,7 @@ printf('
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="description" content="' . get_bloginfo('description') . '" />
 	<link rel="icon" type="image/x-icon" href="' . get_bloginfo('template_url') . '/img/favicon.png"/>
-	<link rel="stylesheet" href="http://localhost:8080/innova/wp-content/themes/innova/fonts.css" />
+	<link rel="stylesheet" href="http://localhost:8080/innova//wp-content/themes/innova/fonts.css" />
 	<link rel="stylesheet" href="' . get_bloginfo('stylesheet_url') . '" />');
 wp_head();
 printf('

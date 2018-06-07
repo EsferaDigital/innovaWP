@@ -8,7 +8,8 @@
 	// border: 3px solid green;
 	@include mq($medium){
 		width: 28%;
-		// margin-right: $gutter;
+		margin-bottom: $gutter;
+		margin-top: $gutter-item;
 	}
 }
 
@@ -25,7 +26,6 @@
 		padding-right: 0;
 		padding-left: 0;
 		padding-top: 0;
-		// border: 1px solid green;
 	}
 	&:nth-child(2) ul li{
 		padding: $gutter-item 0;
@@ -56,6 +56,9 @@
 		margin-top: $gutter-item;
 		// border: 2px solid blue;
 		box-shadow: $shadow-flat;
+		@include mq($medium){
+			margin-top: 0;
+		}
 	}
 }
 

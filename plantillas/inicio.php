@@ -26,7 +26,7 @@
             <div class="c-programa-button boton1" id="oculto">Saber más</div>
           </article>
           <div class="c-programa-item" data-anime="right">
-            <div class="c-programa-img"><img src="http://localhost:8080/innova/wp-content/themes/innova/img/programa.jpg" alt="programa"/></div>
+            <div class="c-programa-img"><img src="http://innovacionabiertaantofagasta.cl/wp-content/themes/innova/img/programa.jpg" alt="programa"/></div>
           </div>
         </section>
         <section class="c-desafio" id="desafio">
