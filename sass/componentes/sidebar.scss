@@ -14,16 +14,17 @@
 
 .c-aside > div{
 	max-width: 100%;
-	margin: $gutter-item;
-	margin-top: 0;
+	margin: 0 $gutter-item $gutter-item 0;
 	padding: $gutter-item;
 	background-color: color(bg-item);
 	box-shadow: $shadow-flat;
+	// border: 1px solid red;
 	&:first-child{
 		background-color: color(bg);
 		box-shadow: none;
 		padding-right: 0;
 		padding-left: 0;
+		padding-top: 0;
 		// border: 1px solid green;
 	}
 	&:nth-child(2) ul li{
