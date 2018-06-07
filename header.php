@@ -17,7 +17,7 @@ printf('
 <body>
 	<div class="l-container c-principal" id="inicio">
 		<header class="c-header show-header" id="mainHeader">
-        <h1 class="c-header-logo"><a href="#inicio"><img src="' . get_bloginfo('template_url') . '/img/logo.svg" alt="Logo"/></a></h1>
+        <h1 class="c-header-logo"><a href="#inicio"><img src="' . get_bloginfo('template_url') . '/img/logo.png" alt="Logo"/></a></h1>
         <div class="c-header-menu icon-menu" id="toggle-menu"></div>
 ');
 		$args = array(

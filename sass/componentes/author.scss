@@ -3,6 +3,9 @@
 	flex-wrap: wrap;
 	background-color: color(secondary);
 	box-shadow: $shadow-flat;
+	// margin-top: $gutter-item;
+	margin-bottom: $gutter-item;
+	// border: 1px solid red;
 	&-item{
 		padding: $gutter;
 		padding-top: 0;
