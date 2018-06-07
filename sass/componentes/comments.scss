@@ -94,11 +94,13 @@
 		flex-wrap: wrap;
 		& label{
 			width: 100%;
+			color: black;
 		}
 		& textarea{
 			flex: 0 1 100%;
 			background-color: color(bg);
 			border-color: color(primary);
+			color: black;
 			@include mq($medium){
 				flex: 0 1 60%;
 			}
@@ -111,11 +113,13 @@
 		margin-top: .5rem;
 		& label{
 			width: 100%;
+			color: black;
 		}
 		& input{
 			flex: 1 1 100% !important;
 			background-color: color(bg);
 			border-color: color(primary);
+			color: black;
 			@include mq($medium){
 				flex: 0 1 60% !important;
 			}
@@ -129,11 +133,13 @@
 		// border: 1px solid red;
 		& label{
 			width: 100%;
+			color: black;
 		}
 		& input{
 			flex: 1 1 100% !important;
 			background-color: color(bg);
 			border-color: color(primary);
+			color: black;
 			@include mq($medium){
 				flex: 0 1 60% !important;
 			}
@@ -147,11 +153,13 @@
 		// border: 1px solid red;
 		& label{
 			width: 100%;
+			color: black;
 		}
 		& input{
 			flex: 1 1 100% !important;
 			background-color: color(bg);
 			border-color: color(primary);
+			color: black;
 			@include mq($medium){
 				flex: 0 1 60% !important;
 			}

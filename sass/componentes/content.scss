@@ -22,8 +22,7 @@
 		padding: $gutter;
 		font-family: $secondary-font;
 		@include mq($medium){
-			width: 48%;
-			flex: auto;
+			flex: 0 0 48%;
 			margin: .5rem .5rem 0 0;
 		}
 		&:last-child{

@@ -725,7 +725,8 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #e5e5e5; }
+  background-color: #e5e5e5;
+  border: 3px solid violet; }
   @media screen and (min-width: 1024px) {
     .container-central {
       width: 90%;
@@ -755,10 +756,9 @@ textarea {
     font-family: "Montserrat", sans-serif; }
     @media screen and (min-width: 768px) {
       .c-content-item {
-        width: 48%;
-        -webkit-box-flex: 1;
-            -ms-flex: auto;
-                flex: auto;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 48%;
+                flex: 0 0 48%;
         margin: .5rem .5rem 0 0; } }
     .c-content-item:last-child {
       margin-bottom: .5rem; }
@@ -908,13 +908,15 @@ textarea {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     .comment-form-comment label {
-      width: 100%; }
+      width: 100%;
+      color: black; }
     .comment-form-comment textarea {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 100%;
               flex: 0 1 100%;
       background-color: #e5e5e5;
-      border-color: #0075a2; }
+      border-color: #0075a2;
+      color: black; }
       @media screen and (min-width: 768px) {
         .comment-form-comment textarea {
           -webkit-box-flex: 0;
@@ -929,13 +931,15 @@ textarea {
         flex-wrap: wrap;
     margin-top: .5rem; }
     .comment-form-author label {
-      width: 100%; }
+      width: 100%;
+      color: black; }
     .comment-form-author input {
       -webkit-box-flex: 1 !important;
           -ms-flex: 1 1 100% !important;
               flex: 1 1 100% !important;
       background-color: #e5e5e5;
-      border-color: #0075a2; }
+      border-color: #0075a2;
+      color: black; }
       @media screen and (min-width: 768px) {
         .comment-form-author input {
           -webkit-box-flex: 0 !important;
@@ -950,13 +954,15 @@ textarea {
         flex-wrap: wrap;
     margin-top: .5rem; }
     .comment-form-email label {
-      width: 100%; }
+      width: 100%;
+      color: black; }
     .comment-form-email input {
       -webkit-box-flex: 1 !important;
           -ms-flex: 1 1 100% !important;
               flex: 1 1 100% !important;
       background-color: #e5e5e5;
-      border-color: #0075a2; }
+      border-color: #0075a2;
+      color: black; }
       @media screen and (min-width: 768px) {
         .comment-form-email input {
           -webkit-box-flex: 0 !important;
@@ -971,13 +977,15 @@ textarea {
         flex-wrap: wrap;
     margin-top: .5rem; }
     .comment-form-url label {
-      width: 100%; }
+      width: 100%;
+      color: black; }
     .comment-form-url input {
       -webkit-box-flex: 1 !important;
           -ms-flex: 1 1 100% !important;
               flex: 1 1 100% !important;
       background-color: #e5e5e5;
-      border-color: #0075a2; }
+      border-color: #0075a2;
+      color: black; }
       @media screen and (min-width: 768px) {
         .comment-form-url input {
           -webkit-box-flex: 0 !important;
@@ -1087,13 +1095,20 @@ textarea {
   padding: .5rem;
   border: transparent;
   border-radius: 5px 0 0 5px;
-  background-color: white; }
+  background-color: white;
+  color: black; }
 
 #searchsubmit {
   background-color: #ff9f1c;
   border: transparent;
   border-radius: 0 5px 5px 0;
   color: black; }
+  #searchsubmit:hover {
+    background-color: #ff9403;
+    color: white; }
+  #searchsubmit:active {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
 
 .screen-reader-text {
   display: none; }
@@ -1168,6 +1183,19 @@ textarea {
 .lsicon-instagram {
   background: -webkit-gradient(linear, left bottom, right top, from(#FFD729), to(#BB00B5));
   background: linear-gradient(to right top, #FFD729, #BB00B5); }
+
+.resultado-search {
+  width: 100%;
+  background-color: #60d394;
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3125em;
+  color: white;
+  font-weight: bold; }
+  .resultado-search span {
+    color: #FF570C;
+    font-style: italic;
+    font-weight: normal; }
 
 .c-footer {
   display: -webkit-box;

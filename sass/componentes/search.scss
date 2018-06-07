@@ -1,0 +1,14 @@
+.resultado-search{
+	width: 100%;
+	background-color: color(secondary);
+	padding: $gutter-item;
+	font-family: $secondary-font;
+	font-size: $sub-title;
+	color: white;
+	font-weight: bold;
+	& span{
+		color: color(logoA);
+		font-style: italic;
+		font-weight: normal;
+	}
+}
