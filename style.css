@@ -265,21 +265,21 @@ textarea {
   -webkit-transition: all .4s ease;
   transition: all .4s ease; }
   .c-header-logo {
-    width: 20vw;
+    width: 15%;
     height: auto;
-    padding: 0 1rem; }
+    padding: 0; }
     @media screen and (min-width: 360px) {
       .c-header-logo {
-        width: 15vw; } }
+        width: 13%; } }
     @media screen and (min-width: 768px) {
       .c-header-logo {
-        width: 10vw; } }
+        width: 8%; } }
     @media screen and (min-width: 1024px) {
       .c-header-logo {
-        width: 7vw; } }
-    @media screen and (min-width: 1400px) {
-      .c-header-logo {
-        width: 4vw; } }
+        width: 5%; } }
+    .c-header-logo a img {
+      display: block;
+      width: 100%; }
   .c-header-menu {
     position: relative;
     font-size: 2rem;
@@ -348,14 +348,27 @@ textarea {
     position: relative; }
   .slider-text {
     position: absolute;
+    width: 90%;
     font-family: "Merriweather", serif;
-    font-size: 2.625em;
+    font-size: 1.3rem;
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 2px;
     -webkit-transform: translate(0, -100%);
             transform: translate(0, -100%);
     z-index: 1;
     color: white; }
+    @media screen and (min-width: 411px) {
+      .slider-text {
+        font-size: 1.4rem;
+        line-height: 1.5; } }
+    @media screen and (min-width: 768px) {
+      .slider-text {
+        width: 65%;
+        font-size: 1.5rem; } }
+    @media screen and (min-width: 1024px) {
+      .slider-text {
+        font-size: 2.625em; } }
 
 .botones {
   display: -webkit-box;
@@ -542,6 +555,12 @@ textarea {
       height: 35rem; } }
   @media screen and (min-width: 1024px) {
     .c-desafio {
+      height: 22rem; } }
+  @media screen and (min-width: 1360px) {
+    .c-desafio {
+      height: 21rem; } }
+  @media screen and (min-width: 1400px) {
+    .c-desafio {
       height: 20rem; } }
   .c-desafio-banner {
     width: 100%;
@@ -568,7 +587,11 @@ textarea {
       color: white;
       padding: 1rem;
       font-family: "Merriweather", serif;
-      font-size: 2.625em; }
+      letter-spacing: 2px;
+      font-size: 2rem; }
+      @media screen and (min-width: 768px) {
+        .c-desafio-banner-title {
+          font-size: 2.2rem; } }
 
 .content-desafio {
   display: -webkit-box;
@@ -579,7 +602,7 @@ textarea {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 7%;
+  top: 6%;
   background-color: transparent;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -658,6 +681,9 @@ textarea {
     padding: 0.5rem;
     font-family: "Merriweather", serif;
     font-size: 1.75em; }
+    @media screen and (min-width: 1024px) {
+      .c-empresas-title {
+        font-size: 2.2rem; } }
   .c-empresas-item {
     display: block;
     -webkit-box-flex: 1;
@@ -703,21 +729,47 @@ textarea {
       flex-wrap: wrap;
   width: 100%;
   height: auto;
+  padding: 0 0.5rem;
   width: 100%;
   background-color: #ff9f1c; }
+  @media screen and (min-width: 768px) {
+    .c-patrocinadores {
+      padding: 0 1rem; } }
   .c-patrocinadores-item {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
+        -ms-flex: 1 1 33%;
+            flex: 1 1 33%;
     height: auto;
-    padding-top: .7rem;
-    width: 25%;
-    text-align: center;
-    font-size: 3.0625em;
-    height: 1.5;
-    line-height: 1.5;
-    color: white; }
+    color: white;
+    padding: 0; }
+    .c-patrocinadores-item:first-child {
+      padding: .5rem; }
+      @media screen and (min-width: 768px) {
+        .c-patrocinadores-item:first-child {
+          padding: .5rem 3rem; } }
+      @media screen and (min-width: 1024px) {
+        .c-patrocinadores-item:first-child {
+          padding: .5rem 8rem; } }
+    @media screen and (min-width: 768px) {
+      .c-patrocinadores-item {
+        padding: .5rem; } }
+    @media screen and (min-width: 1024px) {
+      .c-patrocinadores-item {
+        padding: .5rem 4rem; } }
+  .c-patrocinadores-img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: auto; }
 
 .container-central {
   display: -webkit-box;

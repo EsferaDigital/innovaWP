@@ -56,9 +56,12 @@ function activa_widgets(){
 add_action('widgets_init', 'activa_widgets');
 
 // JS Personalizado
+// ruta al jquery https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js
 
 function insertar_js(){
 	$scriptSrc = get_template_directory_uri() . '/js/index.js';
+	$jqSrc = get_template_directory_uri() . '/js/jquery.js';
+	wp_enqueue_script('jQuery', $jqSrc, array(), '1.0', true);
 	wp_enqueue_script( 'personal', $scriptSrc , array(), '1.0',  true );
 }
 

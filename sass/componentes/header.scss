@@ -10,20 +10,22 @@
 	// box-shadow: $shadow-flat;
 	//opacity: .8;
 	&-logo{
-		width: 20vw;
+		width: 15%;
 		height: auto;
-		padding: 0 $gutter;
+		padding: 0;
+		// border: 1px solid red;
 		@include mq($movil1){
-			width: 15vw;
+			width: 13%;
 		}
 		@include mq($medium){
-			width: 10vw;
+			width: 8%;
 		}
 		@include mq($large){
-			width: 7vw;
+			width: 5%;
 		}
-		@include mq($x-large){
-			width: 4vw;
+		& a img{
+			display: block;
+			width: 100%;
 		}
 	}
 	&-menu{

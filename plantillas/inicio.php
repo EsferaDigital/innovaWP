@@ -80,9 +80,14 @@
           </section>
         </section>
         <div class="c-patrocinadores">
-          <div class="c-patrocinadores-item icon-flask"></div>
-          <div class="c-patrocinadores-item icon-industry"></div>
-          <div class="c-patrocinadores-item icon-diamond"></div>
-          <div class="c-patrocinadores-item icon-eyedropper"></div>
+          <div class="c-patrocinadores-item">
+            <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/gob.png" alt="Gobierno Regional">
+          </div>
+          <div class="c-patrocinadores-item">
+            <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/quintil.png" alt="Quintil">
+          </div>
+          <div class="c-patrocinadores-item">
+            <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/chrys.png" alt="Chrysalis">
+          </div>
         </div>
 	</main>
