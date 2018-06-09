@@ -76,12 +76,13 @@
 //Estilo para eventos
 
 .hide-header{
-	top: -5rem;
+	background-color: transparent;
 }
 
 .show-header{
-	top: 0;
-	background-color: ligthen(color(primary));
+	// top: 0;
+	// background-color: ligthen(color(primary));
+	background-color: color(primary);
 }
 
 .show-menu{

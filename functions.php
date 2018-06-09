@@ -59,13 +59,17 @@ add_action('widgets_init', 'activa_widgets');
 // ruta al jquery https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js
 
 function insertar_js(){
-	$scriptSrc = get_template_directory_uri() . '/js/index.js';
-	$jqSrc = get_template_directory_uri() . '/js/jquery.js';
-	wp_enqueue_script('jQuery', $jqSrc, array(), '1.0', true);
+	if(is_page( 10 )){
+		$inicioSrc = get_template_directory_uri() . '/js/inicio.js';
+		wp_enqueue_script('inicio-jscript', $inicioSrc, array(), '1.0', true);
+	}
+	$scriptSrc = get_template_directory_uri() . '/js/extra.js';
 	wp_enqueue_script( 'personal', $scriptSrc , array(), '1.0',  true );
 }
 
 add_action( 'wp_enqueue_scripts', 'insertar_js' );
+
+
 
 
 

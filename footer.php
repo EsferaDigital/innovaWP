@@ -12,6 +12,7 @@
         </section>
         <div class="icon-angle-left" id="up"></div>
       </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	 </div>
 	 <?php wp_footer(); ?>
   </body>
