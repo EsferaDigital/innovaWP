@@ -8,18 +8,15 @@ Description: Tema personalizado para la web innovaantofagasta
 Version: 0.0.1
 Tags: emprendimiento, asesoría, concurso, participación.
 */
-@import url("https://fonts.googleapis.com/css?family=Bitter|Merriweather|Montserrat|Noto+Sans|Noto+Serif|Open+Sans|Poiret+One");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: helvetica, sans-serif;
-  font-size: 16px;
   background-color: #fff;
   color: #000; }
 
 body {
-  overflow-x: hidden;
-  font-family: 'Roboto', sans-serif; }
+  overflow-x: hidden; }
 
 /*Además, todo lo que haga antes y despues, añadeles un box-sizing heredaddo (inherit). Toma el valor del elemento padre. Con ello logramos que los elementos contenedores no hagan crecer la caja cuando tienen padding. También, reseteamos los margines y padding y el tamaño de letra*/
 *, *:before, *:after {
@@ -119,60 +116,30 @@ textarea {
   top: 2px;
   margin-right: .5em; }
 
-.boton1 {
-  display: block;
-  line-height: 3;
-  background-color: #ff9f1c;
-  padding: 0 1.5rem;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 1.5rem;
-  font-size: .8rem;
-  cursor: pointer; }
-  .boton1:hover {
-    background-color: #ff9403; }
-  .boton1:active {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95); }
+h1 {
+  font-size: 2rem; }
 
-.boton2 {
-  display: inline-block;
-  line-height: 3;
-  background-color: #60d394;
-  padding: 0 1.5rem;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 1.5rem;
-  font-size: .8rem;
-  cursor: pointer; }
-  .boton2:hover {
-    background-color: #4ccd87; }
-  .boton2:active {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95); }
+h2 {
+  font-size: 1.75rem; }
 
-.boton-realista {
-  display: inline-block;
-  line-height: 2.8rem;
-  height: 3rem;
-  padding: 0 1.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(teal), to(#006161));
-  background: linear-gradient(teal, #006161);
-  color: white;
-  font-size: 1rem;
-  text-transform: uppercase;
-  border: 1px solid #004d4d;
-  border-bottom-width: 4px;
-  border-radius: .3rem;
-  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
-          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
-  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5); }
-  .boton-realista:hover {
-    background: #006161; }
-  .boton-realista:active {
-    border-bottom-width: 1px;
-    line-height: 3em;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5); }
+h3 {
+  font-size: 1.5rem; }
+
+h4 {
+  font-size: 1.25rem; }
+
+h5, a, abbr, b, code, dfn, em, i, li, mark, p, pre, strong {
+  font-size: 1rem; }
+
+h6, small {
+  font-size: .75rem; }
+
+html {
+  font-family: "Merriweather", serif;
+  font-size: 0.875em; }
+
+body {
+  font-family: "Merriweather", serif; }
 
 .button-ej {
   display: inline-block;
@@ -233,15 +200,6 @@ textarea {
     -webkit-transform: rotate(2deg);
             transform: rotate(2deg); }
 
-.box {
-  color: red; }
-  @media screen and (min-width: 768px) {
-    .box {
-      color: green; } }
-  @media screen and (min-width: 1024px) {
-    .box {
-      color: purple; } }
-
 .l-container {
   max-width: 1400px;
   margin: auto; }
@@ -249,6 +207,83 @@ textarea {
 .l-container-item {
   max-width: 1280px;
   margin: auto; }
+
+.boton1 {
+  display: block;
+  line-height: 3;
+  background-color: #f7941e;
+  padding: 0 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  font-size: .8rem;
+  cursor: pointer; }
+  .boton1:hover {
+    background-color: #f38809; }
+  .boton1:active {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+
+.boton2 {
+  display: inline-block;
+  line-height: 3;
+  background-color: #009fc8;
+  padding: 0 1.5rem;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 1.5rem;
+  font-size: .8rem;
+  cursor: pointer; }
+  .boton2:hover {
+    background-color: #008baf; }
+  .boton2:active {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95); }
+
+.c-modal {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 116, 162, 0.8); }
+  .c-modal::before {
+    content: "✕";
+    color: white;
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    font-size: 2rem;
+    opacity: .7; }
+  .c-modal-item {
+    width: 92%;
+    max-width: 1400px;
+    height: 85vh;
+    margin: auto;
+    background-color: azure; }
+    .c-modal-item iframe {
+      height: 100%; }
+
+.scroll-iframe {
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto; }
+  .scroll-iframe iframe {
+    width: 100%;
+    height: 100%; }
+
+.scroll-desafio {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll; }
+  .scroll-desafio img {
+    display: block;
+    width: 100%;
+    height: auto; }
 
 .c-header {
   display: -webkit-box;
@@ -285,7 +320,7 @@ textarea {
     font-size: 2rem;
     padding: 0 1rem;
     z-index: 600;
-    color: #ff9f1c;
+    color: #f7941e;
     cursor: pointer; }
     @media screen and (min-width: 768px) {
       .c-header-menu {
@@ -296,7 +331,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #0075a2;
+  background-color: #65768e;
   top: 0;
   right: -11rem;
   width: 11rem;
@@ -309,7 +344,7 @@ textarea {
   .c-nav ul {
     display: block; }
   .c-nav li {
-    border-bottom: 1px solid #ff9f1c; }
+    border-bottom: 1px solid #f7941e; }
   .c-nav a {
     display: block;
     position: relative;
@@ -324,7 +359,7 @@ textarea {
   background-color: transparent; }
 
 .show-header {
-  background-color: #0075a2; }
+  background-color: #65768e; }
 
 .show-menu {
   right: 0; }
@@ -357,7 +392,7 @@ textarea {
             transform: translate(0, -100%);
     z-index: 1;
     color: white; }
-    @media screen and (min-width: 411px) {
+    @media screen and (min-width: 375px) {
       .slider-text {
         font-size: 1.4rem;
         line-height: 1.5; } }
@@ -415,7 +450,7 @@ textarea {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0075a2;
+    background-color: #65768e;
     opacity: .7; }
 
 .slider-img-1 {
@@ -444,7 +479,7 @@ textarea {
   cursor: pointer; }
   .btn-prev:hover, .btn-next:hover {
     background-color: white;
-    color: #ff9f1c; }
+    color: #f7941e; }
   @media screen and (min-width: 768px) {
     .btn-prev, .btn-next {
       display: block; } }
@@ -543,7 +578,7 @@ textarea {
   @media screen and (min-width: 360px) {
     .c-desafio {
       height: 64.5rem; } }
-  @media screen and (min-width: 411px) {
+  @media screen and (min-width: 375px) {
     .c-desafio {
       height: 64rem; } }
   @media screen and (min-width: 480px) {
@@ -576,7 +611,7 @@ textarea {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #0075a2;
+      background-color: #65768e;
       opacity: .8; }
     .c-desafio-banner-title {
       position: relative;
@@ -646,14 +681,14 @@ textarea {
       .content-desafio-item:last-child {
         margin-right: 0; } }
   .content-desafio-item:hover {
-    background-color: #60d394;
+    background-color: #009fc8;
     color: white;
     cursor: pointer; }
   .content-desafio-icon {
     margin: auto;
     text-align: center;
     font-size: 3.0625em;
-    color: #ff9f1c;
+    color: #f7941e;
     padding: 1rem; }
   .content-desafio-title {
     text-align: center;
@@ -672,7 +707,7 @@ textarea {
   width: 100%;
   padding: 1rem;
   margin: 0.5rem auto 0 0;
-  background-color: #60d394; }
+  background-color: #009fc8; }
   .c-empresas-title {
     text-align: center;
     width: 100%;
@@ -708,7 +743,7 @@ textarea {
     margin: auto;
     text-align: center;
     font-size: 3.0625em;
-    color: #ff9f1c;
+    color: #f7941e;
     padding: 0 0.5rem; }
   .c-empresas-subtitle {
     text-align: center;
@@ -730,7 +765,7 @@ textarea {
   height: auto;
   padding: 0 0.5rem;
   width: 100%;
-  background-color: #ff9f1c; }
+  background-color: #f7941e; }
   @media screen and (min-width: 768px) {
     .c-patrocinadores {
       padding: 0 1rem; } }
@@ -843,42 +878,42 @@ textarea {
   font-family: "Montserrat", sans-serif;
   padding: 0.5rem 0; }
   .item-autor a {
-    color: #ff9f1c; }
+    color: #f7941e; }
     .item-autor a:hover {
-      color: #60d394; }
+      color: #009fc8; }
 
 .item-extracto {
   font-family: "Montserrat", sans-serif;
   padding: 0.5rem 0; }
   .item-extracto a span {
     font-size: .9rem;
-    color: #ff9f1c; }
+    color: #f7941e; }
     .item-extracto a span:hover {
-      color: #60d394; }
+      color: #009fc8; }
 
 .item-categorias {
   padding-bottom: 0.5rem; }
   .item-categorias a {
-    color: #ff9f1c; }
+    color: #f7941e; }
     .item-categorias a:hover {
-      color: #60d394; }
+      color: #009fc8; }
 
 .icon-tag {
-  color: #60d394; }
+  color: #009fc8; }
   .icon-tag::before {
     position: relative;
     top: 4px; }
   .icon-tag a {
-    color: #ff9f1c; }
+    color: #f7941e; }
     .icon-tag a:hover {
-      color: #60d394; }
+      color: #009fc8; }
 
 .item-category {
   padding-top: 0.5rem; }
   .item-category a {
-    color: #ff9f1c; }
+    color: #f7941e; }
     .item-category a:hover {
-      color: #60d394; }
+      color: #009fc8; }
 
 .item-tags {
   padding-bottom: 0.5rem; }
@@ -935,22 +970,22 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-style: normal;
-  color: #ff9f1c; }
+  color: #f7941e; }
 
 .says {
   font-family: "Montserrat", sans-serif;
-  color: #ff9f1c;
+  color: #f7941e;
   font-weight: bold; }
 
 .comment-meta {
   margin-bottom: .5rem; }
   .comment-meta a {
-    color: #0075a2; }
+    color: #65768e; }
 
 .comment-reply-link {
-  color: #ff9f1c; }
+  color: #f7941e; }
   .comment-reply-link:hover {
-    color: #60d394; }
+    color: #009fc8; }
 
 .comment-respond {
   padding: 0.5rem;
@@ -980,7 +1015,7 @@ textarea {
           -ms-flex: 0 1 100%;
               flex: 0 1 100%;
       background-color: #e5e5e5;
-      border-color: #0075a2;
+      border-color: #65768e;
       color: black; }
       @media screen and (min-width: 768px) {
         .comment-form-comment textarea {
@@ -1003,7 +1038,7 @@ textarea {
           -ms-flex: 1 1 100% !important;
               flex: 1 1 100% !important;
       background-color: #e5e5e5;
-      border-color: #0075a2;
+      border-color: #65768e;
       color: black; }
       @media screen and (min-width: 768px) {
         .comment-form-author input {
@@ -1026,7 +1061,7 @@ textarea {
           -ms-flex: 1 1 100% !important;
               flex: 1 1 100% !important;
       background-color: #e5e5e5;
-      border-color: #0075a2;
+      border-color: #65768e;
       color: black; }
       @media screen and (min-width: 768px) {
         .comment-form-email input {
@@ -1049,7 +1084,7 @@ textarea {
           -ms-flex: 1 1 100% !important;
               flex: 1 1 100% !important;
       background-color: #e5e5e5;
-      border-color: #0075a2;
+      border-color: #65768e;
       color: black; }
       @media screen and (min-width: 768px) {
         .comment-form-url input {
@@ -1065,7 +1100,7 @@ textarea {
 
 #wp-comment-cookies-consent {
   background-color: #e5e5e5 !important;
-  border-color: #0075a2;
+  border-color: #65768e;
   margin-right: 5px; }
 
 .comment-notes {
@@ -1080,7 +1115,7 @@ textarea {
 .submit {
   display: block;
   line-height: 3;
-  background-color: #ff9f1c;
+  background-color: #f7941e;
   padding: 0 1.5rem;
   color: white;
   text-transform: uppercase;
@@ -1088,7 +1123,7 @@ textarea {
   border-color: transparent;
   float: right; }
   .submit:hover {
-    background-color: #ff9403; }
+    background-color: #f38809; }
   .submit:active {
     -webkit-transform: scale(0.95);
             transform: scale(0.95); }
@@ -1131,12 +1166,12 @@ textarea {
     margin-top: 0.5rem; }
   .c-aside > div:nth-child(2) ul li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid #ff9f1c; }
+    border-bottom: 1px solid #f7941e; }
   .c-aside > div:nth-child(2) ul li a {
     color: black;
     font-family: "Montserrat", sans-serif; }
     .c-aside > div:nth-child(2) ul li a:hover {
-      color: #0075a2; }
+      color: #65768e; }
   .c-aside > div h2 {
     font-family: "Merriweather", serif;
     font-size: 1.3125em;
@@ -1170,12 +1205,12 @@ textarea {
   color: black; }
 
 #searchsubmit {
-  background-color: #ff9f1c;
+  background-color: #f7941e;
   border: transparent;
   border-radius: 0 5px 5px 0;
   color: black; }
   #searchsubmit:hover {
-    background-color: #ff9403;
+    background-color: #f38809;
     color: white; }
   #searchsubmit:active {
     -webkit-transform: scale(0.95);
@@ -1185,10 +1220,10 @@ textarea {
   display: none; }
 
 .tagcloud a {
-  color: #ff9f1c;
+  color: #f7941e;
   font-size: .9rem !important; }
   .tagcloud a:hover {
-    color: #0075a2; }
+    color: #65768e; }
 
 .rpwwt-widget ul {
   display: -webkit-box;
@@ -1257,7 +1292,7 @@ textarea {
 
 .resultado-search {
   width: 100%;
-  background-color: #60d394;
+  background-color: #009fc8;
   padding: 0.5rem;
   font-family: "Montserrat", sans-serif;
   font-size: 1.3125em;
@@ -1274,7 +1309,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #60d394;
+  background-color: #009fc8;
   -webkit-box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.575);
           box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.575);
   margin-bottom: 0.5rem; }
@@ -1398,39 +1433,12 @@ textarea {
   text-align: center;
   position: fixed;
   padding: .2rem .1rem 0 .2rem;
-  background-color: #ff9f1c;
+  background-color: #f7941e;
   bottom: 10%;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   right: 5%;
   font-size: 2.5rem;
   cursor: pointer; }
-
-.c-modal {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 116, 162, 0.8); }
-  .c-modal::before {
-    content: "✕";
-    color: white;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    opacity: .7; }
-  .c-modal-item {
-    width: 92%;
-    max-width: 1400px;
-    height: 85vh;
-    margin: auto;
-    background-color: azure; }
-    .c-modal-item iframe {
-      height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

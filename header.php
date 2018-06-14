@@ -17,7 +17,7 @@ printf('
 <body>
 	<div class="l-container c-principal" id="inicio">
 		<header class="c-header hide-header" id="mainHeader">
-        <h1 class="c-header-logo"><a href="http://localhost:8080/innova/"><img src="' . get_bloginfo('template_url') . '/img/logo.png" alt="Logo"/></a></h1>
+        <h1 class="c-header-logo"><a href="#"><img src="' . get_bloginfo('template_url') . '/img/logo.png" alt="Logo"/></a></h1>
         <div class="c-header-menu icon-menu" id="toggle-menu"></div>
 ');
 		$args = array(

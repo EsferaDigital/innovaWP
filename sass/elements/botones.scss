@@ -38,26 +38,26 @@
 	}
 }
 
-.boton-realista{
-	display: inline-block;
-	line-height: 2.8rem;
-	height: 3rem;
-	padding: 0 1.5rem;
-	background: linear-gradient(teal, darken(teal,6));
-	color: white;
-	font-size: 1rem;
-	text-transform: uppercase;
-	border: 1px solid darken(teal,10);
-	border-bottom-width: 4px;
-	border-radius: .3rem;
-	box-shadow: 0 0 0 1px rgba(#fff, .15) inset;
-	text-shadow: 0 -1px 1px rgba(#000, .5);
-	&:hover{
-		background: darken(teal,6);
-	}
-	&:active{
-		border-bottom-width: 1px;
-		line-height: 3em;
-		text-shadow: 0 1px 1px rgba(#000, .5);
-	}
-}
+// .boton-realista{
+// 	display: inline-block;
+// 	line-height: 2.8rem;
+// 	height: 3rem;
+// 	padding: 0 1.5rem;
+// 	background: linear-gradient(teal, darken(teal,6));
+// 	color: white;
+// 	font-size: 1rem;
+// 	text-transform: uppercase;
+// 	border: 1px solid darken(teal,10);
+// 	border-bottom-width: 4px;
+// 	border-radius: .3rem;
+// 	box-shadow: 0 0 0 1px rgba(#fff, .15) inset;
+// 	text-shadow: 0 -1px 1px rgba(#000, .5);
+// 	&:hover{
+// 		background: darken(teal,6);
+// 	}
+// 	&:active{
+// 		border-bottom-width: 1px;
+// 		line-height: 3em;
+// 		text-shadow: 0 1px 1px rgba(#000, .5);
+// 	}
+// }

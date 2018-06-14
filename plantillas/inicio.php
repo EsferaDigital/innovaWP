@@ -1,15 +1,15 @@
 <div class="c-slider" id="c-slider">
 		<div class="slider" id="slider">
 			<section class="slider-section slider-img-1">
-			<p class="slider-text">Desafio de Innovación Abierta</p>
+			<p class="slider-text">CAPACÍTATE Y TRANSFÓRMATE EN UN SOLUCIONADOR POSTULANDO A NUESTRO PROGRAMA DE INNOVACIÓN ABIERTA</p>
 			<div class="botones"><a class="boton1" href="#programa">Programa</a><a class="postula boton2">Postula</a></div>
 			</section>
 			<section class="slider-section slider-img-2">
-			<p class="slider-text">Importantes Empresas de la Región</p>
+			<p class="slider-text">CONOCE LAS OPORTUNIDADES QUE LOS DESAFÍOS DE INNOVACIÓN ABIERTA ANTOFAGASTA TIENEN PARA TI</p>
 			<div class="botones"><a class="boton1" href="#desafio">Desafios</a><a class="postula boton2">Postula</a></div>
 			</section>
 			<section class="slider-section slider-img-3">
-			<p class="slider-text">texto 3</p>
+			<p class="slider-text">CONÉCTATE CON DESTACADAS EMPRESAS DE LA REGIÓN QUE ESTÁN BUSCANDO SOLUCIONES A PROBLEMAS</p>
 			<div class="botones"><a class="boton1" href="#empresas">empresas</a><a class="postula boton2">Postula</a></div>
 			</section>
 		</div>
