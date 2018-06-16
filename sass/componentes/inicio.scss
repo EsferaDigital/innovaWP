@@ -16,38 +16,41 @@
 	&-text{
 		position: absolute;
 		width: 90%;
-		font-family: $primary-font;
-		font-size: 1.3rem;
+		// font-family: $primary-font;
+		font-size: 1.2rem;
 		font-weight: $bold;
 		text-transform: uppercase;
-		letter-spacing: 2px;
-		transform: translate(0, -100%);
+		line-height: 1.5;
+		letter-spacing: 1px;
+		transform: translate(0, -50%);
 		z-index: 1;
 		color: white;
 		@include mq($movil2){
-			font-size: 1.4rem;
-			line-height: 1.5;
+			line-height: 2;
+		}
+		@include mq($small){
+			width: 80%;
 		}
 		@include mq($medium){
-			width: 65%;
-			// border: 1px solid red;
-			font-size: 1.5rem;
+			font-size: 1.7rem;
 		}
 		@include mq($large){
-			// width: 55%;
-			font-size: $big-title;
+			font-size: 2rem;
 		}
 	}
 }
 
 .botones{
 	display: flex;
-	width: 80%;
+	width: 90%;
 	position: absolute;
 	justify-content: space-between;
 	z-index: 1;
-	transform: translate(0, 100%);
+	transform: translate(0, 300%);
 	//border: 1px solid red;
+	@include mq($small){
+		width: 60%;
+	}
 	@include mq($medium){
 		width: 40%;
 	}
@@ -79,29 +82,33 @@
 	}
 }
 
-.slider-img-1{	background-image: img('4.jpg');}
+.slider-img-1{	background-image: img('1.jpg');}
 .slider-img-2{background-image: img('2.jpg');}
 .slider-img-3{	background-image: img('3.jpg');}
 
 .btn-prev, .btn-next{
 	display: none;
-	//width: rem(40px);
-	//height: rem(40px);
+	width: rem(40px);
+	height: rem(40px);
 	padding: $gutter-item;
-	background-color: rgba(255, 255, 255, 0.7);
+	background-color: color(primary-light);
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	//line-height: rem(40px);
-	font-size: 22px;
 	color: white;
 	font-weight: bold;
 	text-align: center;
 	font-family: monospace;
 	border-radius: 50%;
 	cursor: pointer;
+	&:before{
+		position: relative;
+		font-size: 2rem;
+		bottom: .25rem;
+		right: .23rem;
+	}
 	&:hover{
-		background-color: rgba(255, 255, 255, 1);
+		background-color: darken(color(primary),7);
 		color: color(cta);
 	}
 	@include mq($medium){
@@ -121,10 +128,8 @@
 .c-programa{
 	@include c-wrap;
 	height: auto;
-	//padding: $gutter;
-	margin: .5rem auto 0 0;
+	margin: .5rem auto .5rem 0;
 	@include mq($large){
-		padding: $gutter;
 		margin: 0;
 	}
 	&-item{
@@ -134,87 +139,85 @@
 		margin: 0;
 		background-color: color(bg-item);
 		box-shadow: $shadow-flat;
+		overflow: hidden;
 		//border: 1px solid red;
 		@include mq($medium){
-			width: 45%;
+			flex: 0 0 90%;
+			margin: $gutter auto;
+			padding: 0 3rem;
 		}
-	}
-	&-item:first-child{
-		margin-right: 0;
-		@include mq($medium){
-			margin-right: $gutter-item;
-		}
-	}
-	&-item:last-child{
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 	&-title{
 		margin: $gutter;
-		margin-left: 0;
+		color: color(footer);
 		text-align: center;
-		font-family: $primary-font;
 		font-size: $title;
 		letter-spacing: 2px;
-		@include mq($medium){
-			text-align: left;
-		}
 	}
 	&-text{
 		color: color(text-dark);
-		//font-family: $secondary-font;
+		font-family: $secondary-font;
 		letter-spacing: 2px;
-		// text-indent: 2rem;
 		margin-bottom: $gutter-item;
+		&:nth-last-child(-n+3){
+			font-weight: bold;
+			& span{
+				font-weight: normal;
+				margin-left: .5rem;
+			}
+		}
+		&-ul{
+			margin-bottom: .5rem;
+			& li{
+				font-family: $secondary-font;
+				letter-spacing: 2px;
+				list-style: disc;
+				margin-left: 1.2rem;
+				margin-bottom: .5rem;
+			}
+		}
 	}
 	&-button{
 		margin: $gutter;
+		background-color: color(cta);
 		margin-right: 0;
 		float: right;
 		cursor: pointer;
-	}
-	&-img{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-		height: auto;
-		padding: $gutter;
-		& img{
-			display: block;
-			height: auto;
-		}	
 	}
 }
 
 .c-desafio{
 	position: relative;
 	width: 100%;
-	//desde 320px de vw;
-	height: 67.5rem;
-	margin: $gutter-item auto $gutter 0;
-	background-color: color(bg);
+	height: 89rem;
+	margin: 0 auto;
+	background-color: color(bg-item);
+	box-shadow: $shadow-flat;
 	@include mq($movil1){
-		height: 64.5rem;
+		height: 83rem;
 	}
 	@include mq($movil2){
-		height: 64rem;
+		height: 82rem;
+	}
+	@include mq($movil3){
+		height: 79rem;
+	}
+	@include mq($movil4){
+		height: 77rem;
 	}
 	@include mq($small){
-		height: 62.5rem;
+		height: 75rem;
 	}
 	@include mq($medium){
-		height: 35rem;
+		width: 90%;
+		margin: 0 auto;
+		height: 46rem;
 	}
 	@include mq($large){
-		height: 22rem;
+		height: 39rem;
 	}
 	@include mq($m-large){
-		height: 21rem;
-	}
-	@include mq($x-large){
-		height: 20rem;
+		height: 29rem;
 	}
 	&-banner{
 		width: 100%;
@@ -223,7 +226,6 @@
 		height: 15rem;
 		background-size: cover;
 		background-position: center;
-		//background-image: url('../img/banner-desafio.jpg');
 		background-image: img('banner-desafio.jpg');
 		&::before{
 			content: "";
@@ -242,7 +244,6 @@
 			z-index: 1;
 			color: color(bg-item);
 			padding: $gutter;
-			font-family: $primary-font;
 			letter-spacing: 2px;
 			font-size: 2rem;
 			@include mq($medium){
