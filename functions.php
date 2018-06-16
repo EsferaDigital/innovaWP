@@ -68,8 +68,3 @@ function insertar_js(){
 }
 
 add_action( 'wp_enqueue_scripts', 'insertar_js' );
-
-
-
-
-

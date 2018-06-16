@@ -1,4 +1,6 @@
 .c-header{
+	--tamano: 2rem;
+	--ancho-logo: 15%;
 	display: flex;
 	position: fixed;
 	width: 100%;
@@ -7,21 +9,29 @@
 	z-index: z-index(capa10); 
 	padding: $gutter;
 	transition: all .4s ease;
-	// box-shadow: $shadow-flat;
-	//opacity: .8;
+	@include mq($movil1){
+		--ancho-logo: 13%;
+	}
+	@include mq($medium){
+		--ancho-logo: 8%;
+	}
+	@include mq($large){
+		--ancho-logo: 5%;
+	}
 	&-logo{
-		width: 15%;
+		width: var(--ancho-logo);
 		height: auto;
 		padding: 0;
+		transition: all .4s ease;
 		// border: 1px solid red;
 		@include mq($movil1){
-			width: 13%;
+			width: var(--ancho-logo);
 		}
 		@include mq($medium){
-			width: 8%;
+			width: var(--ancho-logo);
 		}
 		@include mq($large){
-			width: 5%;
+			width: var(--ancho-logo);
 		}
 		& a img{
 			display: block;
@@ -30,7 +40,7 @@
 	}
 	&-menu{
 		position: relative;
-		font-size: 2rem;
+		font-size: var(--tamano);
 		//top: .5rem;
 		padding: 0 $gutter;
 		z-index: z-index(capa6);
@@ -64,12 +74,12 @@
 	& a{
 		display: block;
 		position: relative;
-		font-family: $primary-font;
 		text-transform: uppercase;
 		font-weight: $bold;
 		letter-spacing: 2px;
 		line-height: 3;
 		color: white;
+		cursor: pointer;
 	}
 }
 
@@ -80,8 +90,8 @@
 }
 
 .show-header{
-	// top: 0;
-	// background-color: ligthen(color(primary));
+	// --tamano: 1.5rem;
+	--ancho-logo: 3%;
 	background-color: color(primary);
 }
 

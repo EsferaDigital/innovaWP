@@ -1,93 +1,149 @@
 <div class="c-slider" id="c-slider">
-		<div class="slider" id="slider">
-			<section class="slider-section slider-img-1">
-			<p class="slider-text">CAPACÍTATE Y TRANSFÓRMATE EN UN SOLUCIONADOR POSTULANDO A NUESTRO PROGRAMA DE INNOVACIÓN ABIERTA</p>
-			<div class="botones"><a class="boton1" href="#programa">Programa</a><a class="postula boton2">Postula</a></div>
-			</section>
-			<section class="slider-section slider-img-2">
-			<p class="slider-text">CONOCE LAS OPORTUNIDADES QUE LOS DESAFÍOS DE INNOVACIÓN ABIERTA ANTOFAGASTA TIENEN PARA TI</p>
-			<div class="botones"><a class="boton1" href="#desafio">Desafios</a><a class="postula boton2">Postula</a></div>
-			</section>
-			<section class="slider-section slider-img-3">
-			<p class="slider-text">CONÉCTATE CON DESTACADAS EMPRESAS DE LA REGIÓN QUE ESTÁN BUSCANDO SOLUCIONES A PROBLEMAS</p>
-			<div class="botones"><a class="boton1" href="#empresas">empresas</a><a class="postula boton2">Postula</a></div>
-			</section>
+  <div class="slider" id="slider">
+    <section class="slider-section slider-img-1">
+			<p class="slider-text">Capacítate y transfórmate en un solucionador postulando a nuestro programa de innovación abierta
+      </p>
+			<div class="link botones">
+        <a class="boton1" href="#programa">Programa</a>
+        <a class="postula boton2">Postula</a>
+      </div>
+		</section>
+		<section class="slider-section slider-img-2">
+			<p class="slider-text">Conoce las oportunidades que los desafíos de innovación abierta Antofagasta tienen para ti
+      </p>
+			<div class="link botones">
+        <a class="boton1" href="#desafio">Desafios</a>
+        <a class="postula boton2">Postula</a></div>
+		</section>
+		<section class="slider-section slider-img-3">
+			<p class="slider-text">Conéctate con destacadas empresas de la Región que están buscando soluciones a problemas
+      </p>
+			<div class="link botones">
+        <a class="boton1" href="#empresas">empresas</a>
+        <a class="postula boton2">Postula</a></div>
+		</section>
 		</div>
 		<div class="btn-prev icon-angle-left" id="btn-prev"></div>
-		<div class="btn-next icon-angle-right" id="btn-next"></div>
-	</div>
-	<main class="c-main">
-		<section class="c-programa" id="programa">
-      <article class="c-programa-item" data-anime="left">
-        <h2 class="c-programa-title">Programa</h2>
-        <p class="c-programa-text">El Desafío de Innovación abierta de Antofagasta, es una oportunidad única que invita a participar a todos aquellos que tengan ideas, soluciones o emprendimientos a ser parte de los procesos de innovación de destacadas empresas de la región.</p>
-        <p class="c-programa-text">La innovación abierta es una estrategia vanguardista y dinámica mediante la cual las empresas se abren hacia la comunidad y sus redes para desarrollar la cooperación con organizaciones o profesionales externos y encontrar de manera más eficiente soluciones a las problemáticas que enfrentan en sus variadas dinámicas operacionales.</p>
-        <p class="c-programa-text">Es sin duda, entonces un importante recurso que ayuda a potenciar la capacidad de innovación de las empresas Y entrega a los emprendedores o solucionadores el acceso directo con clientes que de otro modo sería muy difícil llegar.</p>
-        <div class="c-programa-button boton1" id="oculto">Saber más</div>
-      </article>
-      <div class="c-programa-item" data-anime="right">
-        <div class="c-programa-img"><img src="http://innovacionabiertaantofagasta.cl/wp-content/themes/innova/img/programa.jpg" alt="programa"/></div>
-      </div>
-    </section>
-    <section class="c-desafio" id="desafio">
-      <div class="c-desafio-banner">
-        <h1 class="c-desafio-banner-title">Desafios</h1>
-      </div>
-      <div class="content-desafio">
-        <section class="content-desafio-item" data-anime="left" id="modal1">
-          <div class="content-desafio-icon icon-shop"></div>
-          <h2 class="content-desafio-title">Desafio 1</h2>
-          <p>Tipo de letra del titulos es "Poiret One" y del parrafo "Open Sans". </p>
-        </section>
-        <section class="content-desafio-item" data-anime="left" id="modal2">
-          <div class="content-desafio-icon icon-truck"></div>
-          <h2 class="content-desafio-title">Desafio 2 </h2>
-          <p>Tipo de letra del titulos es "Bitter" y del parrafo "Open Sans". </p>
-        </section>
-        <section class="content-desafio-item" data-anime="right" id="modal3">
-          <div class="content-desafio-icon icon-bulb"></div>
-          <h2 class="content-desafio-title">Desafio 3</h2>
-          <p>Tipo de letra del titulos es "Merriweather" y del parrafo "Montserrat".</p>
-        </section>
-        <section class="content-desafio-item" data-anime="right" id="modal4">
-          <div class="content-desafio-icon icon-bar-chart"></div>
-          <h2 class="content-desafio-title">Desafio 4</h2>
-          <p>Tipo de letra del titulos es "Noto Serif" y del parrafo "Noto Sans".</p>
-        </section>
-      </div>
-    </section>
-    <section class="c-empresas" id="empresas">
-      <h1 class="c-empresas-title">Empresas</h1>
-      <section class="c-empresas-item" data-anime="left">
-        <div class="c-empresas-icon icon-aim"></div>
-        <h2 class="c-empresas-subtitle">Colaborador 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+	<div class="btn-next icon-angle-right" id="btn-next"></div>
+</div>
+<main class="c-main">
+  <section class="c-programa" id="programa">
+    <article class="c-programa-item">
+      <h2 class="c-programa-title" data-anime="top">Programa</h2>
+      <p class="c-programa-text" data-anime="left">Los Desafíos de Innovación Abierta Antofagasta, son una oportunidad única que invita a participar a todos aquellos que tengan ideas, soluciones o emprendimientos a ser parte de los procesos de innovación de destacadas empresas de la Región de Antofagasta.</p>
+      <p class="c-programa-text" data-anime="right">Innovación Abierta Antofagasta consiste en un programa especialmente diseñado para conectar empresas con emprendedores, en torno a problemáticas relevantes que necesitan ser resueltas.</p>
+      <p class="c-programa-text" data-anime="left">Dentro de los principales beneficios del programa encontrarás:</p>
+      <ul class="c-programa-text-ul" data-anime="right">
+        <li>Conectarte de manera temprana con empresas que necesitan resolver problemas relevantes a través de la co-creación de soluciones.</li>
+        <li>Acceso a oportunidades y apoyo en acceso a financiamiento para hacer negocios con las empresas participantes del programa. </li>
+        <li>Participación en el programa de talleres, dictado por expertos, sobre metodologías ágiles de emprendimiento y desarrollo de soluciones en conjunto con tu cliente.</li>
+        <li>Participación del programa intensivo de co-creación Bootcamp de Emprendimiento.</li>
+        <li>Participación del Programa de Aceleración de Startups de la prestigiosa Incubadora de Negocios Chrysalis PUCV.</li>
+        <li>Participación de una pasantía de inmersión en el ecosistema de innovación y emprendimiento de la zona centro del país.</li>
+      </ul>
+      <p class="c-programa-text" data-anime="left">La innovación abierta es una estrategia de gestión de la innovación, vanguardista a nivel mundial, mediante la cual las empresas van más allá de sus límites organizacionales y desarrollan la cooperación con organizaciones y/o profesionales externos a la compañía, con el fin de maximizar la probabilidad de éxito en la solución de problemáticas internas detectadas y empaquetadas en desafíos de innovación.</p>
+      <p class="c-programa-text" data-anime="right">Inicio de las postulaciones:<span>12 de Junio.</span></p>
+      <p class="c-programa-text" data-anime="left">Cierre de las postulaciones:<span>15 de Julio.</span></p>
+      <div class="c-programa-button boton1" data-anime="right" id="modal-programa">Saber más</div>
+    </article>
+  </section>
+  <section class="c-desafio" id="desafio">
+    <div class="c-desafio-banner">
+      <h1 class="c-desafio-banner-title" data-anime="top">Desafíos</h1>
+    </div>
+    <div class="content-desafio">
+      <section class="content-desafio-item" data-anime="left" id="modal1">
+        <h2>Desafíos</h2>
+        <h4>Bejos</h4>
+        <p>Empresa de Ingeniería aplicada en los rubros de energía, minería e industria en general</p>        
       </section>
-      <section class="c-empresas-item" data-anime="left">
-        <div class="c-empresas-icon icon-amazon"></div>
-        <h2 class="c-empresas-subtitle">Colaborador 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <section class="content-desafio-item" data-anime="top" id="modal2">
+        <h2>Desafíos </h2>
+        <h4>El Mercurio de Antofagasta</h4>
+        <p>Periódico chileno, de carácter local, editado en Antofagasta</p>        
       </section>
-      <section class="c-empresas-item" data-anime="right">
-        <div class="c-empresas-icon icon-behance"></div>
-        <h2 class="c-empresas-subtitle">Colaborador 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+      <section class="content-desafio-item" data-anime="right" id="modal3">
+        <h2>Desafíos</h2>
+        <h4>BUILDTEK</h4>
+        <p>Empresa constructora especialista construcción y montaje, EPC y mantenimiento industrial</p>        
       </section>
-      <section class="c-empresas-item" data-anime="right">
-        <div class="c-empresas-icon icon-meetup"></div>
-        <h2 class="c-empresas-subtitle">Colaborador 4</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <section class="content-desafio-item" data-anime="left" id="modal4">
+        <h2>Desafíos</h2>
+        <h4>Ferrocarril Antofagasta - La Paz</h4>
+        <p>Empresa de logística y transporte de productos derivados de la actividad minera</p>        
       </section>
-    </section>
-      <div class="c-patrocinadores">
-        <div class="c-patrocinadores-item">
-          <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/gob.png" alt="Gobierno Regional">
-        </div>
-        <div class="c-patrocinadores-item">
-          <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/quintil.png" alt="Quintil">
-        </div>
-        <div class="c-patrocinadores-item">
-          <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/chrys.png" alt="Chrysalis">
-        </div>
+      <section class="content-desafio-item" data-anime="top" id="modal5">
+        <h2>Desafíos</h2>
+        <h4>Nova Mine</h4>
+        <p>Empresa dedicada a la investigación y desarrollo de soluciones de ingeniería con alto nivel de innovación en el área de mantenimiento</p>
+      </section>
+      <section class="content-desafio-item" data-anime="right" id="modal6">
+        <h2>Desafíos</h2>
+        <h4>Aguas Antofagasta</h4>
+        <p>Empresa encargada de la producción y distribución de agua potable, así como recolección, tratamiento y disposición de aguas servidas</p>
+      </section>
+    </div>
+  </section>
+  <section class="c-empresas" id="empresas">
+      <h1 class="c-empresas-title" data-anime="right">Empresas</h1>
+      <div class="contain-empresas">
+        <section class="contain-empresas-item" data-anime="left">
+          <h2 class="contain-empresas-item-subtitle">Bejos</h2>
+          <div class="contain-empresas-item-img">
+            <img src="http://localhost:8080/innova/wp-content/themes/innova/img/bejos.jpg" alt="Bejos"/>
+          </div>
+          <a href="http://www.bejos.cl/" target="_blank">bejos.cl </a>
+        </section>
+        <section class="contain-empresas-item" data-anime="top">
+          <h2 class="contain-empresas-item-subtitle">El Mercurio de Antofagasta</h2>
+          <div class="contain-empresas-item-img">
+            <img src="http://localhost:8080/innova/wp-content/themes/innova/img/mercurio.png" alt="El mercurio"/>
+          </div>
+          <a href="http://www.mercurioantofagasta.cl/" target="_blank">mercurioantofagasta.cl </a>
+        </section>
+        <section class="contain-empresas-item" data-anime="right">
+          <h2 class="contain-empresas-item-subtitle">BUILDTEK</h2>
+          <div class="contain-empresas-item-img">
+            <img src="http://localhost:8080/innova/wp-content/themes/innova/img/buildtek.jpg" alt="Buildtek"/>
+          </div>
+          <a href="http://www.buildtek.cl/" target="_blank">buildtek.cl
+          </a>
+        </section>
+        <section class="contain-empresas-item" data-anime="left">
+          <h2 class="contain-empresas-item-subtitle">Ferrocarril Antofagasta - La Paz</h2>
+          <div class="contain-empresas-item-img">
+            <img src="http://localhost:8080/innova/wp-content/themes/innova/img/fcab.png" alt="Ferrocarriles"/>
+          </div>
+          <a href="https://www.fcab.cl/" target="_blank">fcab.cl
+          </a>
+        </section>
+        <section class="contain-empresas-item" data-anime="top">
+          <h2 class="contain-empresas-item-subtitle">Nova Mine</h2>
+          <div class="contain-empresas-item-img">
+            <img src="http://localhost:8080/innova/wp-content/themes/innova/img/novamine.png" alt="Novamine"/>
+          </div>
+          <a href="http://www.nova-mine.cl/" target="_blank">nova-mine.cl
+          </a>
+        </section>
+        <section class="contain-empresas-item" data-anime="right">
+          <h2 class="contain-empresas-item-subtitle">Aguas Antofagasta</h2>
+          <div class="contain-empresas-item-img">
+            <img src="http://localhost:8080/innova/wp-content/themes/innova/img/aguas.jpg" alt="Aguas Antofagasta"/>
+          </div>
+          <a href="http://www3.aguasantofagasta.cl/" target="_blank">aguasantofagasta.cl
+          </a>
+        </section>        
       </div>
-	</main>
+  </section>
+  <div class="c-patrocinadores">
+    <div class="c-patrocinadores-item">
+      <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/gob.png" alt="Gobierno Regional">
+    </div>
+    <div class="c-patrocinadores-item">
+      <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/quintil.png" alt="Quintil">
+    </div>
+    <div class="c-patrocinadores-item">
+      <img class="c-patrocinadores-img" src="http://localhost:8080/innova/wp-content/themes/innova/img/chrys.png" alt="Chrysalis">
+    </div>
+  </div>
+</main>

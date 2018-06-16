@@ -1,8 +1,8 @@
 //Slider
 
-var slider = jQuery('#slider')
-var next = jQuery('#btn-next')
-var prev = jQuery('#btn-prev')
+let slider = jQuery('#slider')
+let next = jQuery('#btn-next')
+let prev = jQuery('#btn-prev')
 const header = document.getElementById('mainHeader')
 let alturaHeader = header.offsetHeight;
 

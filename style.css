@@ -286,6 +286,8 @@ body {
     height: auto; }
 
 .c-header {
+  --tamano: 2rem;
+  --ancho-logo: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,25 +301,36 @@ body {
   padding: 1rem;
   -webkit-transition: all .4s ease;
   transition: all .4s ease; }
+  @media screen and (min-width: 360px) {
+    .c-header {
+      --ancho-logo: 13%; } }
+  @media screen and (min-width: 768px) {
+    .c-header {
+      --ancho-logo: 8%; } }
+  @media screen and (min-width: 1024px) {
+    .c-header {
+      --ancho-logo: 5%; } }
   .c-header-logo {
-    width: 15%;
+    width: var(--ancho-logo);
     height: auto;
-    padding: 0; }
+    padding: 0;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease; }
     @media screen and (min-width: 360px) {
       .c-header-logo {
-        width: 13%; } }
+        width: var(--ancho-logo); } }
     @media screen and (min-width: 768px) {
       .c-header-logo {
-        width: 8%; } }
+        width: var(--ancho-logo); } }
     @media screen and (min-width: 1024px) {
       .c-header-logo {
-        width: 5%; } }
+        width: var(--ancho-logo); } }
     .c-header-logo a img {
       display: block;
       width: 100%; }
   .c-header-menu {
     position: relative;
-    font-size: 2rem;
+    font-size: var(--tamano);
     padding: 0 1rem;
     z-index: 600;
     color: #f7941e;
@@ -348,17 +361,18 @@ body {
   .c-nav a {
     display: block;
     position: relative;
-    font-family: "Merriweather", serif;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 3;
-    color: white; }
+    color: white;
+    cursor: pointer; }
 
 .hide-header {
   background-color: transparent; }
 
 .show-header {
+  --ancho-logo: 3%;
   background-color: #65768e; }
 
 .show-menu {
