@@ -18,10 +18,9 @@ function headerFixed(){
 	if (st > lastScrollTop) {
 		header.classList.add('show-header')
 
-	}else if (sctop === 0) {
+	}else if (window.pageYOffset === 0) {
 		header.classList.remove('show-header')
 	}
-
 	lastScrollTop = st;	
 }
 

@@ -1,7 +1,6 @@
 <style>
 .c-header{
-	position: fixed !important;
-	background-color: rgb(101, 118, 142);
+	background-color: rgb(101, 118, 142) !important;
 	box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.575);
 }
 </style>

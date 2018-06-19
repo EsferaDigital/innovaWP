@@ -3,18 +3,25 @@
 	position: relative;
 	top: 4rem;
 	flex-wrap: wrap;
-	border: 3px solid red;
+	@include mq($movil4){
+		top: 4.5rem;
+	}
+	@include mq($medium){
+		top: 5.5rem;
+	}
+	@include mq($m-large){
+		top: 6rem;
+	}
 	&-list{
 		width: 100%;
 		margin: 0 $gutter-item;
-		border: 3px solid blue;
 		@include mq($large){
 			width: 90%;
 			margin: auto;
 		}
 	}
 	&-form{
-		width: 80%;
+		width: 100%;
 		margin: 0 auto;
 		margin-bottom: $gutter-item;
 		box-shadow: $shadow-flat;
@@ -63,7 +70,6 @@
 }
 
 .comment-meta{
-	border: 3px solid red;
 	margin-bottom: .5rem;
 	& a{
 		color: color(primary);
@@ -89,13 +95,12 @@
 .comment-form{
 	display: flex;
 	flex-wrap: wrap;
-	border: 1px solid red;
 	&-comment{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		& label{
-			max-width: 100%;
+			flex: 0 0 100%;
 			color: black;
 		}
 		& textarea{
@@ -113,12 +118,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-top: .5rem;
+		overflow: hidden;
 		& label{
 			width: 100%;
 			color: black;
 		}
 		& input{
-			flex: 1 1 100% !important;
+			flex: 0 0 100% !important;
 			background-color: color(bg);
 			border-color: color(primary);
 			color: black;
@@ -132,6 +138,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-top: .5rem;
+		overflow: hidden;
 		// border: 1px solid red;
 		& label{
 			width: 100%;
@@ -152,6 +159,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin-top: .5rem;
+		overflow: hidden;
 		// border: 1px solid red;
 		& label{
 			width: 100%;

@@ -6,10 +6,8 @@
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	// border: 3px solid red;
 	@include mq($medium){
 		width: 65%;
-		margin-right: $gutter-item;
 		margin-bottom: $gutter;
 	}
 	&-item{

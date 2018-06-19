@@ -28,8 +28,7 @@
 		padding-top: 0;
 		padding-bottom: 0;
 		margin-top: 0;
-		border: 1px solid red;
-		@include mq($large){
+		@include mq($medium){
 			margin-top: .5rem;
 		}
 	}
@@ -109,13 +108,18 @@
 	display: flex;
 	flex-wrap: wrap;
 	& li{
-		flex: 1 1 30%;
+		flex: 0 0 47%;
 		height: 20% !important;
 		margin: .5rem 0 !important;
 		margin-right: .5rem !important;
 		padding: 0 !important;
 		@include mq($medium){
-			height: 10% !important;
+			flex: 0 0 28%;
+			height: 7% !important;
+		}
+		@include mq($m-large){
+			flex: 0 0 40%;
+			height: 15% !important;
 		}
 		// &:nth-child(even){
 		// 	margin-right: 0 !important;
