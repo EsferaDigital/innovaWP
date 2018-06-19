@@ -1,7 +1,7 @@
 .c-header{
-	--tamano: 2rem;
 	--ancho-logo: 15%;
 	display: flex;
+	top: 0;
 	position: fixed;
 	width: 100%;
 	height: auto;
@@ -40,7 +40,7 @@
 	}
 	&-menu{
 		position: relative;
-		font-size: var(--tamano);
+		font-size: 2rem;
 		//top: .5rem;
 		padding: 0 $gutter;
 		z-index: z-index(capa6);
@@ -89,10 +89,12 @@
 	background-color: transparent;
 }
 
-.show-header{
-	// --tamano: 1.5rem;
-	--ancho-logo: 3%;
+.show-header{	
 	background-color: color(primary);
+	box-shadow: $shadow-flat;
+	@include mq($large){
+		--ancho-logo: 3%;
+	}
 }
 
 .show-menu{

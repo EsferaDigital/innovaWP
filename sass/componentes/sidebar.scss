@@ -15,20 +15,23 @@
 
 .c-aside > div{
 	max-width: 100%;
-	margin: 0 $gutter-item $gutter-item 0;
+	margin: 0 $gutter-item $gutter-item $gutter-item;
 	padding: $gutter-item;
 	background-color: color(bg-item);
 	box-shadow: $shadow-flat;
 	// border: 1px solid red;
 	&:first-child{
-		background-color: color(bg);
+		background-color: transparent;
 		box-shadow: none;
 		padding-right: 0;
 		padding-left: 0;
 		padding-top: 0;
 		padding-bottom: 0;
-		margin-top: $gutter-item;
-		// border: 1px solid red;
+		margin-top: 0;
+		border: 1px solid red;
+		@include mq($large){
+			margin-top: .5rem;
+		}
 	}
 	&:nth-child(2) ul li{
 		padding: $gutter-item 0;
@@ -38,7 +41,7 @@
 		color: black;
 		font-family: $secondary-font;
 		&:hover{
-			color: color(primary);
+			color: color(secondary);
 		}
 	}
 	& h2{
@@ -98,7 +101,7 @@
 	color: color(cta);
 	font-size: .9rem !important;
 	&:hover{
-		color: color(primary);
+		color: color(secondary);
 	}
 }
 
@@ -106,18 +109,17 @@
 	display: flex;
 	flex-wrap: wrap;
 	& li{
-		width: 45%;	
-		flex: auto;
+		flex: 1 1 30%;
 		height: 20% !important;
 		margin: .5rem 0 !important;
-		margin-right: 1rem !important;
+		margin-right: .5rem !important;
 		padding: 0 !important;
 		@include mq($medium){
 			height: 10% !important;
 		}
-		&:nth-child(even){
-			margin-right: 0 !important;
-		}
+		// &:nth-child(even){
+		// 	margin-right: 0 !important;
+		// }
 		& a img{
 			width: 100% !important;
 			margin: 0 !important;

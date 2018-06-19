@@ -1,22 +1,24 @@
 .c-comment{
 	display: flex;
+	position: relative;
+	top: 4rem;
 	flex-wrap: wrap;
-	// border: 3px solid red;
+	border: 3px solid red;
 	&-list{
 		width: 100%;
 		margin: 0 $gutter-item;
-		// border: 3px solid blue;
+		border: 3px solid blue;
 		@include mq($large){
 			width: 90%;
 			margin: auto;
 		}
 	}
 	&-form{
-		width: 100%;
-		margin: 0 $gutter-item;
+		width: 80%;
+		margin: 0 auto;
 		margin-bottom: $gutter-item;
 		box-shadow: $shadow-flat;
-		// border: 3px solid orange;
+		border: 3px solid orange;
 		@include mq($large){
 			width: 90%;
 			margin: auto;
@@ -61,7 +63,7 @@
 }
 
 .comment-meta{
-	// border: 3px solid red;
+	border: 3px solid red;
 	margin-bottom: .5rem;
 	& a{
 		color: color(primary);
@@ -87,17 +89,17 @@
 .comment-form{
 	display: flex;
 	flex-wrap: wrap;
-	// border: 1px solid red;
+	border: 1px solid red;
 	&-comment{
 		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		& label{
-			width: 100%;
+			max-width: 100%;
 			color: black;
 		}
 		& textarea{
-			flex: 0 1 100%;
+			flex: 0 0 100%;
 			background-color: color(bg);
 			border-color: color(primary);
 			color: black;

@@ -55,7 +55,7 @@ function onePageScroll(e){
 	var coordSection = idLink.offset().top
 
 	jQuery('html, body').animate({
-		scrollTop: (coordSection - alturaHeader)
+		scrollTop: (coordSection - alturaHeader + (parseFloat(0.25) * 100) )
 	}, 1000)
 }
 

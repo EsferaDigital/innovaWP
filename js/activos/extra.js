@@ -8,6 +8,7 @@ let lastScrollTop = 0;
 
 // Creamos las funciones
 
+
 function headerFixed(){
 	//al hace scroll aumenta el valor de sctop
 	let sctop = document.documentElement.scrollTop;
@@ -15,7 +16,6 @@ function headerFixed(){
 	// console.log(sctop)
 
 	if (st > lastScrollTop) {
-		// probar a darle un display block para evitar que otros elementos queden debajo del header al navegar desde otras páginas
 		header.classList.add('show-header')
 
 	}else if (sctop === 0) {
